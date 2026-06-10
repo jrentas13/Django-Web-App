@@ -29,8 +29,8 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |  5/14/26  |  12:45 pm     |  MTG   |            Lecture                                |      90 min       |
 |  5/14/26  |  1:15 pm      |  TP    |            Daily Stand-Up, project planning       |      60 min       |
 |  5/15/26  |  11:00 am     |  IM    |            Python review                          |      60 min       |
-|  5/16/26        |    11:00 am      |    IM    |  Django research, setting up project, starting server  |      120 min       |
-|  6/10/26        |    11:00 am      |    IM    |                                            |             |
+|  5/16/26        |    11:00 am      |    IM    |  Django research, setting up project, starting server  |  120 min  |
+|  6/10/26        |    11:00 am      |    IM    |  Creating Homepage, Publishing repo to GitHub  |   120 min   |
 |          |          |        |                                            |             |
 |          |          |        |                                            |             |
 
