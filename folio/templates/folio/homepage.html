@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ name }} | Portfolio</title>
+        <link rel="styelsheet" href="{% static 'folio/style.css' %}">
+    </head>
+    <body>
+
+        <header class="hero">
+            <nav>
+                <h2>{{ name }}</h2>
+                <div>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <section class="hero-content">
+                <h1>Hi, I'm {{ name }}</h1>
+                <p>{{ title }}</p>
+                <a class="button" href="#projects">View My Work</a>
+            </section>
+        </header>
+
+        <main>
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>
+                    I'm working on learning Django to broaden my skillset in using Python.
+                    This porfolio keeps track of the progress I have made as a developer and 
+                    displays the projects I've done.
+                </p>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+
+                <div class="project-grid">
+                    {% for project in projects %}
+                        <div class="project-card">
+                            <h3>{{ project.title }}</h3>
+                            <p>{{ project.description }}</p>
+                            <p><strong>Tools:</strong> {{ project.tools }}</p>
+                            <a href="{{ project.link }}">View Project</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <p>Email: javy.rentas@gmail.com</p>
+                <p>GitHub: github.com/jfrentas13</p>
+                <p>LinkedIn: linkedin.com/in/yourusername</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 {{ name }}. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>
