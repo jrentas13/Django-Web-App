@@ -290,18 +290,36 @@ img {
 }
 
 .project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-top: 20px;
-    font-size: 0.95rem;
+}
+
+.tool-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: #e0e7ff;
+    color: #3730a3;
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
 .project-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
     margin-top: 24px;
+}
+
+.project-link a {
     color: var(--primary);
     font-weight: 700;
     text-decoration: none;
 }
 
-.project-link:hover {
+.project-link a:hover {
     text-decoration: underline;
 }
 
