@@ -36,9 +36,7 @@
                 <h1>{{ name }}</h1>
                 <h2>{{ title }}</h2>
                 <p class="hero-description">
-                    I'm a Computer Engineer building projects to grow my skillset.
-                    I've built projects using various languages and frameworks, suhc as Python, Django,
-                    JavaScript, Rust, and more. 
+                    {{ introduction }}
                 </p>
                 <div class="hero-buttons">
                     <a class="button project-button" href="#projects">View My Work</a>
@@ -93,15 +91,30 @@
                             <div class="project-card-content">
                                 <h3>{{ project.title }}</h3>
                                 <p class="project-description">{{ project.description }}</p>
-                                <p class="project-tools"><strong>Tools:</strong> {{ project.tools }}</p>
+                                <p class="project-tools">
+                                    {% for tool in project.tools %}
+                                        <span class="tool-badge">{{ tool }}</span>
+                                    {% endfor %}
                             </div>
 
-                            <a
-                                class="project-link"
-                                href="{{ project.link }}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >View Project</a>
+                            <div class="projects-links">
+                                {% if project.github_url %}
+                                    <a
+                                        class="project-link"
+                                        href="{{ project.github_url }}"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Project</a>
+                                {% endif %}
+
+                                {% if project.live_url %}
+                                    <a
+                                        href="{{ project.live_url }}"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >Live Website</a>
+                                {% endif %}
+                            </div>
                         </article>
                     {% empty %}
                         <p>No projects have been added yet.</p>

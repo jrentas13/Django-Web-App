@@ -37,7 +37,7 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |  5/16/26        |    11:00 am      |    IM    |  Django research, setting up project, starting server  |  120 min  |
 |  6/10/26        |    11:00 am      |    IM    |  Creating Homepage, Publishing repo to GitHub  |   120 min   |
 |  7/13/26        |    11:00 am      |    IM    |  Improving homepage and creating CSS           |   60 min    |
-|          |          |        |                                            |             |
+|  7/13/26        |    12:00 pm      |    IM    |  Making the website get the projects dynamically using Django   |   60 min     |
 
 _Note: Add more rows as needed._
 
