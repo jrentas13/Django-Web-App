@@ -29,18 +29,23 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |  5/14/26  |  12:45 pm     |  MTG   |            Lecture                                |      90 min       |
 |  5/14/26  |  1:15 pm      |  TP    |            Daily Stand-Up, project planning       |      60 min       |
 |  5/15/26  |  11:00 am     |  IM    |            Python review                          |      60 min       |
+|  5/16/26  |  2:00 pm      |  TP    |            Django apps,settings, and urls         |      60 min       |
+|  5/19/26  |  12:45 pm     |  MTG   |            Lecture                                |      90 min       |
+|  5/19/26  |  1:15 pm      |  TP    |            Stand-up meeting, project planning     |      60 min       |
+|  5/19/26  |  5:30 pm      |  TP    |            Django views, models, templates        |      60 min       |
+|  5/21/26  |  12:45 pm     |  MTG   |            Lecture, team project work time        |      90 min       |
 |  5/16/26        |    11:00 am      |    IM    |  Django research, setting up project, starting server  |  120 min  |
 |  6/10/26        |    11:00 am      |    IM    |  Creating Homepage, Publishing repo to GitHub  |   120 min   |
-|          |          |        |                                            |             |
+|  7/13/26        |    11:00 am      |    IM    |  Improving homepage and creating CSS           |   60 min    |
 |          |          |        |                                            |             |
 
 _Note: Add more rows as needed._
 
 ## Sprint Totals
 
-|Categroy                       |Total Time (Hours:Minutes)|
+|Category                       |Total Time (Hours:Minutes)|
 |-------------------------------|:------------------------:|
 |IM - Individual Module         |                          |
-|TP - Team Project              |                          |
-|MTG - Class Meetings           |                          |
+|TP - Team Project              |          4:00            |
+|MTG - Class Meetings           |          4:30            |
 |**TOTAL**                      |                          |
