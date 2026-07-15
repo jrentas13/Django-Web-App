@@ -41,6 +41,12 @@
                 <div class="hero-buttons">
                     <a class="button project-button" href="#projects">View My Work</a>
                     <a class="button contact-button" href="#contact">Contact Me</a>
+                    <a
+                        class="button resume-button"
+                        href="{% static 'folio/documents/resume.pdf' %}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >View Résumé</a>
                 </div>
             </section>
         </header>
@@ -53,6 +59,13 @@
                 </div>
 
                 <div class="about-content">
+                    <div class="profile-image-container">
+                        <img
+                            class="profile-image"
+                            src="{% static 'folio/images/profile.jpg' %}"
+                            alt="Portrait of Javier Rentas"
+                        >
+                    </div>
                     <div class="about-text">
                         <p>
                             I'm working on learning Django to broaden my skillset in using Python.
@@ -88,6 +101,13 @@
                 <div class="project-grid">
                     {% for project in projects %}
                         <article class="project-card">
+                            {% if project.image %}
+                                <img
+                                    class="project-image"
+                                    src="{% static project.image %}"
+                                    alt="Screenshot of {{ project.title }}"
+                                >
+                            {% endif %}
                             <div class="project-card-content">
                                 <h3>{{ project.title }}</h3>
                                 <p class="project-description">{{ project.description }}</p>
@@ -125,15 +145,27 @@
             <section id="contact" class="section contact-section">
                 <div class="section-heading">
                     <p class="section-label">Let's connect</p>
-                    <h2>Contact</h2>
+                    <h2>Contact Me</h2>
                 </div>
                 <p class="contact-description">
                     I am interested in software development opportunities, collaboration,
                     and in learning opportunities.
                 </p>
-                <div class="contact-links">
-                    <a href="mailto:javy.rentas@gmail.com">Email Me</a>
 
+                {% if submitted %}
+                    <div class="succes-message">
+                        Thank You!
+                        I'll get back to you as soon as possible.
+                    </div>
+                {% endif %}
+
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <div class="contact-links">
                     <a 
                         href="https://github.com/jrentas13"
                         target="_blank"
