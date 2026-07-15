@@ -37,16 +37,16 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |  5/16/26        |    11:00 am      |    IM    |  Django research, setting up project, starting server  |  120 min  |
 |  6/10/26        |    11:00 am      |    IM    |  Creating Homepage, Publishing repo to GitHub  |   120 min   |
 |  7/13/26        |    11:00 am      |    IM    |  Improving homepage and creating CSS           |   60 min    |
-|  7/13/26        |    12:00 pm      |    IM    |  Making the website get the projects dynamically using Django   |   60 min     |
-|  7/14/26        |     4:30 pm      |    IM    |  Added imagin to the site                      |   75 min    |
-|  7/14/26        |     6:30 pm      |    IM    |  Create a contact form using Django forms to handle any messaging to me. Can now send an email to my personal email from the site  |  80 min  |
+|  7/13/26        |    12:00 pm      |    IM    |  Making the website get the projects dynamically using Django   |   70 min     |
+|  7/14/26        |     4:30 pm      |    IM    |  Added imagin to the site                      |   85 min    |
+|  7/14/26        |     6:30 pm      |    IM    |  Create a contact form using Django forms to handle any messaging to me. Can now send an email to my personal email from the site  |  85 min  |
 _Note: Add more rows as needed._
 
 ## Sprint Totals
 
 |Category                       |Total Time (Hours:Minutes)|
 |-------------------------------|:------------------------:|
-|IM - Individual Module         |                          |
+|IM - Individual Module         |          10:                |
 |TP - Team Project              |          4:00            |
 |MTG - Class Meetings           |          4:30            |
 |**TOTAL**                      |                          |
